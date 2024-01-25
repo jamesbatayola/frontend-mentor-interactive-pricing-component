@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Manrope:wght@600;800&family=Poppins:ital@1&display=swap");
+
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100svh;
+	justify-content: center;
+	align-items: center;
+	font-size: inherit;
+	font-family: "Manrope", sans-serif;
+}
+
+img,
+svg {
+	display: block;
+	width: auto;
+	height: auto;
+}
+
+input {
+	font: inherit;
+}
+
+a {
+	text-decoration: none;
+}
+
+:root {
+	/* primary */
+	--Soft-Cyan: hsl(174, 77%, 80%);
+	--Strong-Cyan: hsl(174, 86%, 45%);
+	--Light-Grayish-Red: hsl(14, 92%, 95%);
+	--Light-Red: hsl(15, 100%, 70%);
+	--Pale-Blue: hsl(226, 100%, 87%);
+
+	/* neutral */
+	--White: hsl (0, 0%, 100%);
+	--Very-Pale-Blue: hsl(230, 100%, 99%);
+	--Lighter-Grayish-Blue: hsl(224, 65%, 95%);
+	--Light-Grayish-Blue: hsl(223, 50%, 87%);
+	--Grayish-Blue: hsl(225, 20%, 60%);
+	--Dark-Desaturated-Blue: hsl(227, 35%, 25%);
+}
+
+.dark {
+	color: var(--Dark-Desaturated-Blue);
+}
+
+.grey {
+	color: var(--Grayish-Blue);
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	border: 4px solid lime;
+}
+
+main {
+	margin-inline: 1rem;
+	display: grid;
+	gap: 4rem;
+}
+
+.background {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+}
+
+.background-pattern {
+	z-index: -1;
+	position: absolute;
+	top: 2.2rem;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+header {
+	display: grid;
+	gap: 1rem;
+}
+
+header h1 {
+	text-align: center;
+	font-size: 1.3rem;
+}
+
+header p {
+	font-size: 15px;
+	text-wrap: balance;
+	text-align: center;
+}
+
+/* --------- main box -------- */
+
+main section {
+	border-radius: 1rem;
+	background-color: var(--Very-Pale-Blue);
+	box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+main section .top {
+	display: grid;
+	gap: 1rem;
+	text-align: center;
+	padding: 1rem;
+}
+
+main section .bottom {
+	padding: 1rem;
+	display: grid;
+}
+
+input {
+	/* removes default styling */
+	-webkit-appearance: none;
+	-moz-apperance: none;
+	appearance: none;
+
+	width: 100%;
+	height: 2px;
+	border-radius: 2rem;
+	border: 4px solid var(--Lighter-Grayish-Blue);
+}
+
+input::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	height: 37px;
+	aspect-ratio: 1 / 1;
+	cursor: pointer;
+	border-radius: 50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: var(--Strong-Cyan);
+	background-image: url(/images/icon-slider.svg);
+	box-shadow: 0px 8px 15px 5px var(--Soft-Cyan);
+}
+
+.plan {
+	display: flex;
+}
+
+.pricing {
+	display: flex;
+	gap: 0.4em;
+	justify-content: center;
+	align-items: center;
+}
+
+.pricing .price {
+	font-size: 2rem;
+}
+
+hr {
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.row-group {
+	display: flex;
+	align-items: center;
+}

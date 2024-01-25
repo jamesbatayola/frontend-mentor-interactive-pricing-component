@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Frontend Mentor | Interactive pricing component</title>
+	</head>
+	<body>
+        <img class="background" src="/images/bg-pattern.svg" alt="" />
+        <img class="background-pattern" src="/images/pattern-circles.svg" alt="" />
+		
+			<main>
+				<header>
+					<h1 class="dark">Simple, traffic-based pricing</h1>
+					<p class="grey">sign-up for our 30-day trial. No credit card required.</p>
+				</header>
+				<section>
+					<div class="top">
+						<div class="pageviews grey">100K PAGEVIEWS</div>
+						<input type="range" min="0" max="1000" value="3" step="200"/>
+                        <div class="pricing grey""><span class="price dark">$0</span> / month</div>
+						<div class="plan">
+							<p class="grey">Monthly Billing</p>
+							<div class="switch">
+								<spanc class="circle">o</spanc>
+							</div>
+							<p class="grey">Yearly Billing <span>-25%</span></p>
+						</div>
+					</div>
+
+                    <hr>
+
+					<div class="bottom">
+						<div class="column-group">
+							<div class="row-group">
+								<svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+									<path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1" />
+								</svg>
+								<p class="grey">Unlimited websites</p>
+							</div>
+							<div class="row-group">
+								<svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+									<path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1" />
+								</svg>
+								<p class="grey">100% data ownershiop</p>
+							</div>
+							<div class="row-group">
+								<svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+									<path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1" />
+								</svg>
+								<p class="grey">Email reports</p>
+							</div>
+						</div>
+						<a><button class="dark">Start my trial</button></a>
+					</div>
+				</section>
+			</main>
+	
+
+		 <!-- <div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+			<a href="#">Your Name Here</a>.
+		 </div> -->
+		<script src="app.js"></script>
+	</body>
+</html>
