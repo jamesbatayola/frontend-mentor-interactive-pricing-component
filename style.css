@@ -75,8 +75,8 @@ main {
 }
 
 .background {
-	min-height: 400px;
-	max-height: 450px;
+	min-height: 45%;
+	max-height: 50%;
 	width: 100%;
 	position: absolute;
 	z-index: -1;
