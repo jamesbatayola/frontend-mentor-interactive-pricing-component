@@ -71,7 +71,7 @@ main {
 	margin-inline: 1rem;
 	display: grid;
 	gap: 4rem;
-	transform: translateY(-17%);
+	transform: translateY(-9%);
 }
 
 .background {
@@ -254,9 +254,13 @@ button:hover {
 }
 
 @media (min-width: 745px) {
+	body {
+		min-height: 100vh;
+	}
+
 	main {
-		width: 620px;
-		transform: translateY(-12%);
+		width: 640px;
+		transform: translateY(-10%);
 		gap: 6rem;
 	}
 
@@ -312,11 +316,11 @@ button:hover {
 	}
 
 	.column-group {
-		font-size: 1rem;
+		font-size: 0.95rem;
 		width: auto;
 		margin-right: auto;
 		place-items: start;
-		gap: 1rem;
+		gap: 0.9rem;
 	}
 
 	.discounted span {
@@ -330,6 +334,7 @@ button:hover {
 	}
 
 	button {
-		padding: 0.85rem 4em;
+		padding: 0.9rem 4em;
+		font-size: 0.9rem;
 	}
 }
